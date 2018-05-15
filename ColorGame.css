@@ -1,0 +1,93 @@
+/* GENERAL STYLING */
+
+body {
+	background-color: #232323;
+	margin: 0;
+	font-family: "Montserrat", "Avenir";
+}
+
+#heading {
+	background: steelblue;
+	color: white;
+	margin: 0;
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.1;
+	padding: 20px;
+	transition: background 0.7s;
+}
+
+#colorDisplay {
+	font-size: 200%;
+	display: block;
+}
+
+#stripe {
+	background: white;
+	height: 30px;
+	text-align: center;
+}
+
+button {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	color: steelblue;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s;
+	outline: none;
+}
+
+#message {
+	display: inline-block;
+	min-width: 120px;
+	width: 20%;
+}
+
+#container {
+	margin: 20px auto;
+	max-width: 600px;
+}
+
+.square {
+	width: 30%;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 15%;
+	transition: background 0.7s, visibility 0.8s;
+}
+
+/* INTERACTIVE STYLING */
+
+button:hover, .selected {
+	background: steelblue;
+	color: white;
+	cursor: pointer;
+}
+
+.square:hover {
+	box-shadow: inset 0px 0px 0px 5px white;
+	cursor: pointer;
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 600px) {
+	#heading {
+		font-size: 8vw;
+	}
+	#colorDisplay {
+		font-size: 130%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+    #message {
+        display: none;
+    }
+}
